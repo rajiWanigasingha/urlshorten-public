@@ -28,7 +28,7 @@ export default async function Datashow({ id }: any) {
     revalidatePath(`${id}/`)
   }
 
-  if (data.length < 0) {
+  if (data.length <= 0) {
     return (
       <>
         <div className="w-full flex flex-col gap-5 p-2">
